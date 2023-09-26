@@ -1,7 +1,8 @@
 header {
   overflow-x: hidden;
   position: relative;
-  margin: 16px auto;
+  margin: 16px 32px;
+
   .header__wrapper {
     display: flex;
     align-items: center;
@@ -149,7 +150,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 820px) {
   header {
     .header__wrapper {
       .header__list {
@@ -172,9 +173,10 @@ header {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   header {
-    height: 350px;
+    height: 130vh;
+    overflow-y: hidden;
     .header__wrapper {
       .header__list {
         display: none;
@@ -197,11 +199,13 @@ header {
       }
 
       .header__modal {
+        height: 130vh;
         display: block;
         position: absolute;
         width: 100%;
         padding: 16px;
         background: #fff;
+        z-index: 9999;
         right: 0px;
         top: 0px;
         transition: all 0.7s ease-in-out;

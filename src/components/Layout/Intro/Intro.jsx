@@ -5,7 +5,7 @@ import location from "../../../assets/images/svg/location.svg";
 import git from "../../../assets/images/svg/github.svg";
 import twit from "../../../assets/images/svg/twitter.svg";
 import figma from "../../../assets/images/svg/figma.svg";
-import background from "../../../assets/images/svg/background.png";
+import background from "../../../assets/images/image/background.jpg";
 
 const Intro = () => {
   return (
@@ -14,7 +14,6 @@ const Intro = () => {
         <div className="intro__wrapper">
           <div className="intro__left">
             <div className="intro__left--title">
-              <h1>Hi, I’m </h1>
               <h1>
                 <TypewriterComponent
                   options={{
@@ -22,14 +21,16 @@ const Intro = () => {
                     loop: true,
                     delay: 100,
                     strings: [
-                      " Abdulqosim 👋",
-                      " a Web developer",
-                      " a Python developer",
+                      "Hi, I’m  Abdulqosim 👋",
+                      "Hi, I’m  a Web developer",
+                      "Hi, I’m  a Python developer",
                     ],
                   }}
                 />
               </h1>
             </div>
+
+            <h2></h2>
 
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -40,33 +41,35 @@ const Intro = () => {
               eius? Vero, doloremque voluptates.
             </p>
 
-            <div className="intro__location">
-              <div>
-                <img src={location} alt="Location" />
-                <p>Tashkent, Chilonozor</p>
+            <div className="ddd">
+              <div className="intro__location">
+                <div>
+                  <img src={location} alt="Location" />
+                  <p>Tashkent, Chilonozor</p>
+                </div>
+
+                <div>
+                  <p className="dot"></p>
+                  <p>Available for new projects</p>
+                </div>
               </div>
 
-              <div>
-                <p className="dot"></p>
-                <p>Available for new projects</p>
+              <div className="intro__links">
+                <a href="#">
+                  <img src={git} alt="Github" />
+                </a>
+                <a href="#">
+                  <img src={twit} alt="Twitter" />
+                </a>
+                <a href="#">
+                  <img src={figma} alt="Figma" />
+                </a>
               </div>
-            </div>
-
-            <div className="intro__links">
-              <a href="#">
-                <img src={git} alt="Github" />
-              </a>
-              <a href="#">
-                <img src={twit} alt="Twitter" />
-              </a>
-              <a href="#">
-                <img src={figma} alt="Figma" />
-              </a>
             </div>
           </div>
           <div className="intro__right">
-            <img className="one" src="https://picsum.photos/280/320" alt="" />
-
+            <img className="one" src={background} alt="" />
+            <div className="bottom-image"></div>
           </div>
         </div>
       </div>
