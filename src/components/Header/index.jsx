@@ -21,7 +21,7 @@ const index = () => {
                   <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#">Work</a>
+                  <a href="#work">Work</a>
                 </li>
                 <li>
                   <a href="#">Testimonials</a>
@@ -62,7 +62,7 @@ const index = () => {
           >
             <div className="header__modal--top">
               <h3>{"<AA />"}</h3>
-              <img src={Close} alt="Close" onClick={() => setModal(!modal)}/>
+              <img src={Close} alt="Close" onClick={() => setModal(!modal)} />
             </div>
             <div className="header__modal--center">
               <ul>
@@ -97,8 +97,6 @@ const index = () => {
         </div>
       </div>
     </header>
-
-    
   );
 };
 

@@ -1,5 +1,8 @@
 import nt from "../assets/images/svg/nt.svg";
 import it from "../assets/images/svg/it.svg";
+import tlt from "../assets/images/image/tlt.png";
+import Book from "../assets/images/image/Book.png";
+import Web from "../assets/images/image/web.png";
 
 export const Base = [
   {
@@ -47,5 +50,33 @@ export const Work__element = [
     workImage: it,
     compant_name: "TATU",
     end: "2027 June some days",
+  },
+];
+
+export const abs = [
+  {
+    rasm: tlt,
+    nomi: "Teletype",
+    parag:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    tech: ["React", "Tailwind Css", "Figma", "Git"],
+    link: "https://react-teletype.vercel.app/",
+  },
+  {
+    rasm: Book,
+    nomi: "Dev Books",
+    parag:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, ipsum velit! Velit enim, labore veniam quaerat a, soluta ex necessitatibus natus voluptates hic dolorem, vel nesciunt distinctio quo magnam repellat sapiente debitis? A recusandae laborum, ",
+    tech: ["React", "Tailwind Css", "Figma", "Git", "Flowbite", "Mui"],
+    link: "https://book-store-liart-five.vercel.app/",
+  },
+
+  {
+    rasm: Web,
+    nomi: "My website",
+    parag:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    tech: ["React", "Scss", "Figma", "Git", "Typewriter-effect"],
+    link: "https://my-website-prt.vercel.app/",
   },
 ];
