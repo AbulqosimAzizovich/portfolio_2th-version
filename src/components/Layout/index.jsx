@@ -14,7 +14,7 @@ const index = () => {
       <Skills />
       <Experience />
       <Work />
-      {/* <Testimonials /> */}
+      <Testimonials />
 
     </main>
   );

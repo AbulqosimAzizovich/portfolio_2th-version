@@ -1,0 +1,106 @@
+.testimonials {
+  margin: 0 32px;
+  .tes__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .testimonials_ {
+      padding: 4px 20px;
+      border-radius: 12px;
+      background: var(--gray-200, #e5e7eb);
+      color: var(--gray-600, #4b5563);
+      font-family: Inter-Medium;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+    }
+
+    .testimonials__p {
+      color: var(--gray-600, #4b5563);
+      text-align: center;
+      font-family: Inter-Regular;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      margin-top: 16px;
+    }
+  }
+}
+
+.tescards {
+  margin: 48px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.tescard {
+  width: 33.3%;
+  height: 428px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 48px;
+  border-radius: 12px;
+  background: var(--gray-default, #fff);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06),
+    0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+
+  p {
+    overflow: hidden;
+    color: var(--gray-600, #4b5563);
+    text-overflow: ellipsis;
+    font-family: Inter-Regular;
+    font-size: 16px;
+    text-align: start;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 24px auto;
+  }
+
+  h3 {
+    color: var(--gray-900, #111827);
+    text-align: center;
+    font-family: Inter-Semibold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  span {
+    color: var(--gray-600, #4b5563);
+    text-align: center;
+    font-family: Inter-Regular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .tescards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .tescard {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .testimonials{
+        margin: 0;
+    }
+    
+}

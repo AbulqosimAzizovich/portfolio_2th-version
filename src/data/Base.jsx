@@ -3,6 +3,7 @@ import it from "../assets/images/svg/it.svg";
 import tlt from "../assets/images/image/tlt.png";
 import Book from "../assets/images/image/Book.png";
 import Web from "../assets/images/image/web.png";
+import avatar from "../assets/images/svg/avatar.svg";
 
 export const Base = [
   {
@@ -78,5 +79,28 @@ export const abs = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
     tech: ["React", "Scss", "Figma", "Git", "Typewriter-effect"],
     link: "https://my-website-prt.vercel.app/",
+  },
+];
+
+export const tes = [
+  {
+    user: avatar,
+    abo: "“Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.”",
+    hName: "Dilshod Buymurodov",
+    hJob: "Founder - Paymart.uz",
+  },
+
+  {
+    user: avatar,
+    abo: "“Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.”",
+    hName: "Dilshod Buymurodov",
+    hJob: "Co-Founder - Uzum.uz",
+  },
+
+  {
+    user: avatar,
+    abo: "Abdulqosim was extremely easy and pleasant to work with and he truly cares about the project being a success. Mukhriddin has a high level of knowledge and was able to work on my Full stack application without any issues.”",
+    hName: "Avaz Aminov",
+    hJob: "PM - Solution Lab",
   },
 ];
