@@ -1,0 +1,203 @@
+.about {
+  margin: 96px 32px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .aboutMe {
+      padding: 4px 20px;
+      border-radius: 12px;
+      background: var(--gray-200, #e5e7eb);
+      color: var(--gray-600, #4b5563);
+      font-family: Inter-Medium;
+      width: 105px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      cursor: default;
+    }
+
+    .about__bottom {
+      margin-top: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: self-start;
+      &--left {
+        width: 50%;
+        position: relative;
+        width: 300px;
+        height: 200px;
+        .one1 {
+          width: 400px;
+          height: 480px;
+          object-fit: cover;
+          position: absolute;
+          top: -20%;
+          left: 15%;
+          z-index: 20;
+          border: 8px solid var(--gray-default, #fff);
+          background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+        }
+
+        .bottom-image1 {
+          height: 480px;
+          width: 400px;
+          background: #e5e7eb;
+          object-fit: cover;
+        }
+      }
+
+      &--right {
+        width: 50%;
+        h4 {
+          color: var(--gray-900, #111827);
+          font-family: Inter-Semibold;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 36px;
+          letter-spacing: -0.6px;
+        }
+
+        div {
+          margin-top: 24px;
+          p {
+            color: var(--gray-600, #4b5563);
+            font-family: Inter-Regular;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 16px auto;
+          }
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px;
+            ul {
+              width: 50%;
+              gap: 16px;
+              display: flex;
+              flex-direction: column;
+
+              li {
+                list-style-type: disc;
+                color: var(--gray-600, #4b5563);
+                font-family: Inter-Regular;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px; /* 150% */
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1128px) {
+  .about {
+    &__wrapper {
+      .about__bottom {
+        flex-direction: column-reverse;
+        justify-content: center;
+        &--left {
+          width: 100%;
+          margin: 40px auto;
+          display: flex;
+          justify-content: center;
+          .one1 {
+            width: 370px;
+            height: 420px;
+            left: calc(50% - 185px);
+          }
+
+          .bottom-image1 {
+            width: 420px;
+            height: 400px;
+          }
+        }
+
+        &--right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .about {
+    position: relative;
+    z-index: 1;
+    margin-top: 96px;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  .about {
+    margin: 130vh 20px 0 20px;
+    &__wrapper {
+      .about__bottom {
+        margin-top: 20px;
+        flex-direction: column;
+
+        &--left {
+          margin-bottom: 120px;
+          .one1 {
+            width: 240px;
+            height: 280px;
+            left: calc(50% - 120px);
+            top: -5%;
+          }
+
+          .bottom-image1 {
+            width: 280px;
+            height: 280px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about {
+    &__wrapper {
+      .about__bottom {
+        &--right {
+          h4 {
+            font-size: 24px;
+            line-height: 32px;
+          }
+
+          div {
+            p {
+              a {
+                color: var(--gray-600, #4b5563);
+                font-family: Inter-Regular;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                text-decoration-line: underline;
+                color: var(--gray-600, #4b5563);
+              }
+            }
+
+            div {
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: start;
+            }
+          }
+        }
+      }
+    }
+  }
+}

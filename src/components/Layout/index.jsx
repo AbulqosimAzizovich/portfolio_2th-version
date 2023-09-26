@@ -9,11 +9,11 @@ const index = () => {
   return (
     <main>
       <Intro />
-      {/* <About />
-      <Skills />
-      <Experience />
-      <Work />
-      <Testimonials /> */}
+      <About />
+      {/* <Skills /> */}
+      {/* <Experience /> */}
+      {/* <Work /> */}
+      {/* <Testimonials /> */}
     </main>
   );
 };
