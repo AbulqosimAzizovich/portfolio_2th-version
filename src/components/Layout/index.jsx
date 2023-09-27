@@ -5,7 +5,6 @@ import Experience from "./Experience/Experience";
 import Work from "./Work/Work";
 import Testimonials from "./Testimonials/Testimonials";
 import About from "./About me/About";
-import Skillscard from './Skills/Skillscard';
 const index = () => {
   return (
     <main>
@@ -15,7 +14,6 @@ const index = () => {
       <Experience />
       <Work />
       <Testimonials />
-
     </main>
   );
 };

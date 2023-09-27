@@ -27,7 +27,7 @@ const index = () => {
                   <a href="#testimonials">Testimonials</a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#footer">Contact</a>
                 </li>
               </ul>
             </div>

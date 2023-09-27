@@ -55,13 +55,13 @@ const Intro = () => {
               </div>
 
               <div className="intro__links">
-                <a href="#">
+                <a href="https://github.com/AbdulqosimAzizovich">
                   <img src={git} alt="Github" />
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/Ummat_571_634">
                   <img src={twit} alt="Twitter" />
                 </a>
-                <a href="#">
+                <a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1229693107521400120">
                   <img src={figma} alt="Figma" />
                 </a>
               </div>

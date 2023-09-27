@@ -16,7 +16,8 @@ const index = () => {
     textField.remove();
   };
   return (
-    <footer>
+
+    <footer id="footer">
       <div className="container">
         <div className="footer__wrapper">
           <div className="footer_">Get in touch</div>
@@ -67,14 +68,13 @@ const index = () => {
           <div className="find">
             <p>You may also find me on these platforms!</p>
             <div>
-              <a href="">
+              <a href="https://github.com/AbdulqosimAzizovich">
                 <img src={git} alt="GitHub" />
               </a>
-              <a href="">
+              <a href="https://twitter.com/Ummat_571_634">
                 <img src={twi} alt="Twitter" />
               </a>
-              <a href="">
-                {" "}
+              <a href="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1229693107521400120">
                 <img src={fig} alt="Figma" />
               </a>
             </div>
@@ -82,8 +82,9 @@ const index = () => {
 
           <div className="footer__end">
             <div>
-              © 2023 | <a href="">Designed</a> and <a href="">coded</a> with ❤️️
-              by NAJOT TA’LIM
+              © 2023 | <a href="https://t.me/SD6639">Designed</a> and
+              <a href="https://github.com/AbdulqosimAzizovich">coded</a> with
+              ❤️️ by NAJOT TA’LIM
             </div>
           </div>
         </div>
