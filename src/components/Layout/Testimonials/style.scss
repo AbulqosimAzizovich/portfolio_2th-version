@@ -1,5 +1,5 @@
 .testimonials {
-  margin: 0 32px;
+  padding: 96px 32px;
   .tes__wrapper {
     display: flex;
     flex-direction: column;
@@ -26,6 +26,10 @@
       font-weight: 400;
       line-height: 28px;
       margin-top: 16px;
+    }
+
+    .tes__p--d {
+      color: #fff;
     }
   }
 }
@@ -83,6 +87,13 @@
     font-weight: 400;
     line-height: 20px;
   }
+  .tes__p--d {
+    color: #fff;
+  }
+}
+
+.tescard__dark {
+  background: #1f2937;
 }
 
 @media only screen and (max-width: 970px) {
@@ -97,10 +108,8 @@
   }
 }
 
-
 @media only screen and (max-width: 575px) {
-    .testimonials{
-        margin: 0;
-    }
-    
+  .testimonials {
+    margin: 0;
+  }
 }

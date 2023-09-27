@@ -3,36 +3,57 @@ import "./style.scss";
 import Dark from "../../assets/images/svg/light.svg";
 import Menu from "../../assets/images/svg/menu.svg";
 import Close from "../../assets/images/svg/close.svg";
+import { useTheme } from "../Theme";
 
 const index = () => {
   const [modal, setModal] = useState(true);
+  const { isDarkMode, toggleDarkMode } = useTheme();
+
   return (
-    <header>
+    <header style={isDarkMode ? {background: "#030712"} : {background: ""}}>
       <div className="container">
-        <div className="header__wrapper">
+        <div
+          className={
+            isDarkMode ? "header__wrapper dark_header" : "header__wrapper"
+          }
+        >
           <div className="header__logo">
-            <span>{"< AA />"}</span>
+            <span className={isDarkMode ? "dark__logo" : ""}>{"< AA />"}</span>
           </div>
 
           <div className="header__list">
             <div className="header__list--left">
               <ul>
                 <li>
-                  <a href="#about">About</a>
+                  <a className={isDarkMode ? "a-dark" : ""} href="#about">
+                    About
+                  </a>
                 </li>
                 <li>
-                  <a href="#work">Work</a>
+                  <a className={isDarkMode ? "a-dark" : ""} href="#work">
+                    Work
+                  </a>
                 </li>
                 <li>
-                  <a href="#testimonials">Testimonials</a>
+                  <a
+                    className={isDarkMode ? "a-dark" : ""}
+                    href="#testimonials"
+                  >
+                    Testimonials
+                  </a>
                 </li>
                 <li>
-                  <a href="#footer">Contact</a>
+                  <a className={isDarkMode ? "a-dark" : ""} href="#footer">
+                    Contact
+                  </a>
                 </li>
               </ul>
             </div>
             <div className="header__list--right">
-              <button className="header__list--right-img">
+              <button
+                className="header__list--right-img"
+                onClick={toggleDarkMode}
+              >
                 <img src={Dark} alt="" />
               </button>
               <a

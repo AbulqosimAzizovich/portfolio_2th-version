@@ -1,5 +1,5 @@
 .about {
-  margin: 96px 32px;
+  padding: 96px 32px;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -60,6 +60,10 @@
           letter-spacing: -0.6px;
         }
 
+        .intro_h4-dark{
+          color: #fff;
+        }
+
         div {
           margin-top: 24px;
           p {
@@ -70,6 +74,10 @@
             font-weight: 400;
             line-height: 24px;
             margin: 16px auto;
+          }
+
+          .intro_p-dark{
+            color: #fff;
           }
 
           div {

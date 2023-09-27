@@ -1,5 +1,5 @@
 .footer {
-  margin: 96px 32px;
+  padding: 96px 32px;
   &__wrapper {
     display: flex;
     align-items: center;
@@ -28,6 +28,10 @@
       margin-top: 16px;
     }
 
+    .footer__p-d {
+      color: #fff;
+    }
+
     .contact {
       display: flex;
       align-items: center;
@@ -48,6 +52,10 @@
           font-weight: 600;
           line-height: 40px; /* 111.111% */
           letter-spacing: -0.72px;
+        }
+
+        .ftA {
+          color: #fff;
         }
 
         img {
@@ -75,6 +83,9 @@
           line-height: 40px;
           letter-spacing: -0.72px;
         }
+        .ftA {
+          color: #fff;
+        }
 
         img {
           cursor: pointer;
@@ -95,6 +106,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
+      }
+
+      .findP {
+        color: #fff;
       }
 
       div {
@@ -126,6 +141,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 20px;
+
         cursor: default;
         a {
           color: var(--gray-600, #4b5563);
@@ -137,6 +153,12 @@
           text-decoration-line: underline;
           cursor: pointer;
         }
+        .feD {
+          color: #fff;
+        }
+      }
+      .feD {
+        color: #fff;
       }
     }
   }
@@ -224,19 +246,14 @@
   }
 }
 
-
 @media only screen and (max-width: 372px) {
-    .footer{
-
-        &__wrapper{
-
-            .find{
-
-                p{
-                    text-align: center;
-                }
-            }
+  .footer {
+    &__wrapper {
+      .find {
+        p {
+          text-align: center;
         }
+      }
     }
-    
+  }
 }

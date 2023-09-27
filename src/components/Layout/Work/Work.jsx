@@ -5,14 +5,25 @@ import "react-awesome-slider/dist/styles.css";
 import { abs } from "../../../data/Base";
 import Workcard from "./Workcard";
 import link from "../../../assets/images/svg/link.svg";
+import { useTheme } from "../../Theme";
 
 const Work = () => {
+  const { isDarkMode, toggleDarkMode } = useTheme();
+
   return (
-    <section id="work" className="work">
+    <section
+      id="work"
+      className="work"
+      style={isDarkMode ? { background: "#030712" } : { background: "" }}
+    >
       <div className="container">
         <div className="work__wrapper">
           <div className="work_">Work</div>
-          <p className="work__theme">
+          <p
+            className={
+              isDarkMode ? "work__theme work__theme--dark" : "work__theme "
+            }
+          >
             Some of the noteworthy projects I have built:
           </p>
 
@@ -23,14 +34,18 @@ const Work = () => {
           <AwesomeSlider className="wres_card">
             {abs.map((e) => {
               return (
-                <div className="work__card">
+                <div
+                  className={
+                    isDarkMode ? "work__card work__card--dark " : "work__card"
+                  }
+                >
                   <div className="wcard__image">
                     <img src={e.rasm} alt={e.nomi} />
                   </div>
                   <div className="work__card--right">
-                    <h4>{e.nomi}</h4>
+                    <h4 className={isDarkMode ? "w_c-h4d" : ""}>{e.nomi}</h4>
 
-                    <p>{e.parag}</p>
+                    <p className={isDarkMode ? "w_c-Pd" : ""}>{e.parag}</p>
 
                     <div className="tech__list">
                       {e.tech.map((e) => {

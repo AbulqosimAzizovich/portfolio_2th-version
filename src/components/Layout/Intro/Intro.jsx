@@ -6,15 +6,22 @@ import git from "../../../assets/images/svg/github.svg";
 import twit from "../../../assets/images/svg/twitter.svg";
 import figma from "../../../assets/images/svg/figma.svg";
 import background from "../../../assets/images/image/background.jpg";
+import { useTheme } from "../../Theme";
 
 const Intro = () => {
+  const { isDarkMode, toggleDarkMode } = useTheme();
+
   return (
-    <section id="intro" className="intro">
+    <section
+      id="intro"
+      className="intro"
+      style={isDarkMode ? { background: "#030712" } : { background: "" }}
+    >
       <div className="container">
         <div className="intro__wrapper">
           <div className="intro__left">
             <div className="intro__left--title">
-              <h1>
+              <h1 className={isDarkMode ? "h1__dark" : ""}>
                 <TypewriterComponent
                   options={{
                     autoStart: true,
@@ -32,7 +39,7 @@ const Intro = () => {
 
             <h2></h2>
 
-            <p>
+            <p className={isDarkMode ? "p_dark-intro" : ""}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
               vitae mollitia ullam eligendi voluptatum laborum quos, vel
               reiciendis explicabo, quo amet fuga ex corrupti rem incidunt
@@ -45,12 +52,12 @@ const Intro = () => {
               <div className="intro__location">
                 <div>
                   <img src={location} alt="Location" />
-                  <p>Tashkent, Chilonozor</p>
+                  <p className={isDarkMode ? "p_dark-intro" : ""}>Tashkent, Chilonozor</p>
                 </div>
 
                 <div>
                   <p className="dot"></p>
-                  <p>Available for new projects</p>
+                  <p className={isDarkMode ? "p_dark-intro" : ""}>Available for new projects</p>
                 </div>
               </div>
 

@@ -1,5 +1,5 @@
 .exp {
-  margin: 96px 32px;
+  padding: 96px 32px;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -28,11 +28,23 @@
       font-weight: 400;
       line-height: 28px;
     }
+
+    .exp_theme-p-dark {
+      color: #fff;
+    }
   }
+}
+
+.exp__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .exp__card {
   width: 100%;
+  margin-top: 48px;
   border-radius: 12px;
   background: var(--gray-default, #fff);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06),
@@ -54,7 +66,11 @@
       font-size: 20px;
       font-style: normal;
       font-weight: 600;
-      line-height: 28px; /* 140% */
+      line-height: 28px;
+    }
+
+    .exp__card-h3 {
+      color: #fff;
     }
 
     ul {
@@ -68,6 +84,10 @@
         line-height: 24px;
         list-style-type: disc;
       }
+
+      .exp__card-li {
+        color: #fff;
+      }
     }
   }
 
@@ -77,9 +97,14 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
+  }
+
+  .exp__card-p {
+    color: #ffffffa8;
   }
 }
+
 .exp__card1 {
   width: 100%;
   border-radius: 12px;
@@ -103,7 +128,10 @@
       font-size: 20px;
       font-style: normal;
       font-weight: 600;
-      line-height: 28px; /* 140% */
+      line-height: 28px;
+    }
+    .exp__card1-h3 {
+      color: #fff;
     }
 
     ul {
@@ -117,6 +145,10 @@
         line-height: 24px;
         list-style-type: disc;
       }
+
+      .exp__card1-li {
+        color: #fff;
+      }
     }
   }
 
@@ -128,13 +160,14 @@
     font-weight: 400;
     line-height: 24px; /* 150% */
   }
+
+  .exp__card1-p {
+    color: #fff;
+  }
 }
-.exp__cards {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  justify-content: center;
-  align-items: center;
+
+.exp__card--dark {
+  background: #1f2937;
 }
 
 .first {
@@ -164,15 +197,13 @@
   }
 }
 
-
 @media only screen and (max-width: 430px) {
-  .exp{
-      margin: 40px 0;
-      &__wrapper{
-        .exp__theme{
-          margin-bottom: 25px;
-        }
+  .exp {
+    margin: 40px 0;
+    &__wrapper {
+      .exp__theme {
+        margin-bottom: 25px;
       }
+    }
   }
-  
 }

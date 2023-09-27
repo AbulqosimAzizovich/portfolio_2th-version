@@ -42,3 +42,9 @@ body {
   margin: 0 auto;
   padding: 0 30px;
 }
+
+.body-dark {
+  background: var(--gray-dark-default, #030712);
+  color: #fff;
+}
+

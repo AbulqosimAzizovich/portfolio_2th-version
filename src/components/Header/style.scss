@@ -1,12 +1,16 @@
 header {
   overflow: hidden;
   position: relative;
-  margin: 16px 32px;
+  padding: 16px 32px;
+  .dark_header {
+    background: var(--gray-dark-default, #030712);
+  }
 
   .header__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .header__logo {
       span {
         color: var(--gray-900, #111827);
@@ -17,6 +21,10 @@ header {
         font-weight: 700;
         line-height: 36px;
         letter-spacing: -0.6px;
+      }
+
+      .dark__logo{
+        color: #fff;
       }
     }
 
@@ -80,6 +88,10 @@ header {
               &:hover {
                 color: rgb(55, 56, 55);
               }
+            }
+
+            .a-dark {
+              color: #fff;
             }
           }
         }
@@ -275,3 +287,4 @@ header {
     }
   }
 }
+
