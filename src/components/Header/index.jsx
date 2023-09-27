@@ -10,7 +10,9 @@ const index = () => {
   const { isDarkMode, toggleDarkMode } = useTheme();
 
   return (
-    <header style={isDarkMode ? {background: "#030712"} : {background: ""}}>
+    <header
+      style={isDarkMode ? { background: "transparent" } : { background: "" }}
+    >
       <div className="container">
         <div
           className={
@@ -74,7 +76,9 @@ const index = () => {
           </button>
 
           <div
-            className="header__modal"
+            className={
+              isDarkMode ? "header__modal header__md-dark" : "header__modal"
+            }
             style={
               modal
                 ? { transform: "translateX(120%)" }
@@ -82,29 +86,64 @@ const index = () => {
             }
           >
             <div className="header__modal--top">
-              <h3>{"<AA />"}</h3>
+              <h3 className={isDarkMode?"md_h3":""}>{"<AA />"}</h3>
               <img src={Close} alt="Close" onClick={() => setModal(!modal)} />
             </div>
             <div className="header__modal--center">
               <ul>
                 <li>
-                  <a href="#">About</a>
+                  <a className={isDarkMode?"a-dark":""}
+                    href="#about"
+                    onClick={() => {
+                      setModal(!modal);
+                    }}
+                  >
+                    About
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Work</a>
+                  <a className={isDarkMode?"a-dark":""}
+                    href="#work"
+                    onClick={() => {
+                      setModal(!modal);
+                    }}
+                  >
+                    Work
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Testimonials</a>
+                  <a className={isDarkMode?"a-dark":""}
+                    href="#testimonials"
+                    onClick={() => {
+                      setModal(!modal);
+                    }}
+                  >
+                    Testimonials
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a className={isDarkMode?"a-dark":""}
+                    href="#footer"
+                    onClick={() => {
+                      setModal(!modal);
+                    }}
+                  >
+                    Contact
+                  </a>
                 </li>
               </ul>
             </div>
             <div className="header__modal--bottom">
               <div className="header__modal--bottom-theme">
-                <p>Switch Theme</p>
-                <img src={Dark} alt="Dark mode" />
+                <p className={isDarkMode?"th-pD" : ""}>Switch Theme</p>
+                <img
+                  src={Dark}
+                  alt="Dark mode"
+                  onClick={() => {
+                    toggleDarkMode();
+                    setModal(!modal);
+                  }}
+                />
               </div>
 
               <a

@@ -60,7 +60,7 @@
           letter-spacing: -0.6px;
         }
 
-        .intro_h4-dark{
+        .intro_h4-dark {
           color: #fff;
         }
 
@@ -76,7 +76,7 @@
             margin: 16px auto;
           }
 
-          .intro_p-dark{
+          .intro_p-dark {
             color: #fff;
           }
 
@@ -141,15 +141,15 @@
 
 @media only screen and (max-width: 750px) {
   .about {
+    padding: 48px 0px;
     position: relative;
     z-index: 1;
-    margin-top: 96px;
   }
 }
 
 @media only screen and (max-width: 577px) {
   .about {
-    margin: 130vh 20px 0 20px;
+    margin: 115vh 20px 0 20px;
     &__wrapper {
       .about__bottom {
         margin-top: 20px;

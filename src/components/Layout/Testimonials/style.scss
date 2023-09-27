@@ -97,6 +97,9 @@
 }
 
 @media only screen and (max-width: 970px) {
+  .testimonials{
+    padding: 48px 0px; 
+  }
   .tescards {
     flex-wrap: wrap;
     justify-content: center;
